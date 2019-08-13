@@ -8,6 +8,9 @@
 
         <title>Liquid Carrot - Deep Learning AI Framework - Examples</title>
         <link rel="icon" type="image/png" href="assets/images/favicon.png?v=123" />
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue-coverflow@2.1.1/"></script>
 
         <!--Core CSS -->
         <link rel="stylesheet" href="assets/css/bulma.css">
@@ -52,12 +55,18 @@
                       <!-- Navbar end -->
                       <div class="navbar-end">
                           <a id="#signup-btn" class="navbar-item" href="coming-soon.html" style="font-weight: bold;">
-                            Guides
-                          </a>
+                              <img style="height:25px; max-width:auto" src="assets/images/illustrations/icons/guide-list.png">
+                              Guides
+                          </a>  
                           <a id="#signup-btn" class="navbar-item" href="https://liquidcarrot.io/carrot" style="font-weight: bold;">
+                            <div class="navbar-brand">
+                              <img class="dark-logo" style="height:25px; max-width:auto;" src="assets/images/illustrations/icons/orangebook.png" alt=" orange Book by Adi Kurniawan from the Noun Project">
+                              <img class="light-logo"  style="height:25px; max-width:auto;" src="assets/images/illustrations/icons/whitebook.png" alt=" white Book by Adi Kurniawan from the Noun Project">
+                            </div>
                             API
-                          </a>
-                          <a id="#signup-btn" class="navbar-item" href="coming-soon.html" style="font-weight: bold;">
+                           </a>
+                          <a id="#signup-btn" class="navbar-item" href="about-us.html" style="font-weight: bold;">
+                              <img style="height:25px; max-width:auto" src="assets/images/favicon.png" alt=>
                             About us
                           </a>
                       </div>
@@ -85,6 +94,12 @@
                       </div>
                       <!-- /Hero image -->
                     </div>
+                  <div id="app">
+                    
+                      
+                  <coverflow :coverList="coverList" :coverWidth="260" :index="2"></coverflow>
+                  <script src="carousel.js">  </script>
+                  </div>
                     <!-- Dark footer -->
         <footer id="dark-footer" class="footer footer-dark">
             <div class="container">
